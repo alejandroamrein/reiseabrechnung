@@ -1,0 +1,39 @@
+<div class="container-fluid" ng-controller='newProjectController as vm'>
+  <nav role="navigation" class="navbar navbar-default">
+    <div ng-include src="'toolbar.html'"></div>
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a ui-sref="test">Einstellen</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a ui-sref="logout">Abmelden</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <form>
+    <div class="form-group">
+      <label for="title">Titel</label>
+      <input type="text" class="form-control" id="title" 
+        placeholder="Titel des Projektes" ng-model="vm.project.Title">
+    </div>
+    <div class="form-group">
+      <label for="desc">Beschreibung</label>
+      <textarea type="text" class="form-control" id="desc" 
+        placeholder="Beschreibung" ng-model="vm.project.Description"></textarea>
+    </div>
+    <div id='errorMessage' ng-bind="vm.errorMessage" style="color:red"></div>
+  </form>
+  
+  <footer>
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-default" ng-click="vm.cancel()">Abbrechen</button>
+      <button type="button" class="btn btn-default" ng-click="vm.save()">Speichern</button>
+    </div>
+  </footer>
+  
+</div>

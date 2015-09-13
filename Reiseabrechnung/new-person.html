@@ -1,0 +1,40 @@
+<div class="container-fluid" ng-controller='newPersonController as vm'>
+  <nav role="navigation" class="navbar navbar-default">
+    <div ng-include src="'toolbar.html'"></div>
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a ui-sref="test">Einstellen</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a ui-sref="logout">Abmelden</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <form>
+    <div class="form-group">
+      <label for="nick">Name / Nickname</label>
+      <input type="text" class="form-control" id="nick" 
+        placeholder="Nickname" ng-model="vm.nick">
+    </div>
+    <div class="form-group">
+      <label for="email1">Email-Adresse (für registrierte Anwender)</label>
+      <input type="email" class="form-control" id="email" 
+        placeholder="Email" ng-model="vm.email">
+    </div>
+    <div id='errorMessage' ng-bind="vm.errorMessage" style="color:red"></div>
+  </form>
+  
+  <footer>
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-default" ng-click="vm.cancel()">Abbrechen</button>
+      <button type="button" class="btn btn-default" ng-click="vm.register()">Registrieren</button>
+      <button type="button" class="btn btn-default" ng-click="vm.save()">Speichern</button>
+    </div>
+  </footer>
+  
+</div>

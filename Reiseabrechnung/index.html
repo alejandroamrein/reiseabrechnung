@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link data-require="bootstrap@*" data-semver="3.3.5" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style type="text/css">
+    .bs-example {
+      margin: 0px;
+    }
+  </style>
+  </head>
+
+  <body>
+    <div class="bs-example view-animate-container" ng-controller="indexController as vm">
+      <div class="view-animate" ui-view=""></div>
+    </div>
+    
+    <hr />
+    <p><a href='canvas-sample.html'>canvas sample</a></p>
+    <p><a href='take-picture-sample.html'>take picture sample</a></p>
+    
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script data-require="jquery@*" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script data-require="bootstrap@*" data-semver="3.3.5" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src='http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js'></script> -->
+    <script data-require="angular.js@*" data-semver="2.0.0-alpha.31" src="https://code.angularjs.org/1.4.3/angular.js"></script>
+    <!-- <script data-require="angular-route@*" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular-route.js"></script> -->
+    <script data-require="angular-animate@*" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular-animate.js"></script>
+    <script data-require="angular-ui-router@*" data-semver="0.2.10" src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+    <script data-require="angular-resource@1.4.3" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular-resource.js"></script>
+    <script type="text/javascript" src="js/shared-services-module.js"></script>
+    <script type="text/javascript" src="js/file-input-directive.js"></script>
+    <script type="text/javascript" src="js/login-module.js"></script>
+    <script type="text/javascript" src="js/login-service.js"></script>
+    <script type="text/javascript" src="js/login-controller.js"></script>
+    <script type="text/javascript" src="js/register-controller.js"></script>
+    <script type="text/javascript" src="js/app-module.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/project-controller.js"></script>
+    <script type="text/javascript" src="js/home-controller.js"></script>
+    <script type="text/javascript" src="js/new-person-controller.js"></script>
+    <script type="text/javascript" src="js/new-project-controller.js"></script>
+  </body>
+
+</html>
